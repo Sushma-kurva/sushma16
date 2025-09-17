@@ -1,0 +1,31 @@
+def basic_chatbot():
+    # Predefined responses
+    responses = {
+        "hello": "Hi there! 👋",
+        "hi": "Hello! How are you?",
+        "how are you": "I'm fine, thanks! How about you?",
+        "bye": "Goodbye! Have a great day! 👋",
+        "thanks": "You're welcome! 😊"
+    }
+
+    print("🤖 Basic Chatbot (type 'exit' to quit)")
+
+    while True:
+        user_input = input("You: ").lower().strip()
+        
+        if user_input == "exit":
+            print("Bot: Exiting... Bye! 👋")
+            break
+
+        # Get response or default message
+        response = responses.get(user_input, "Sorry, I didn't understand that.")
+        print("Bot:", response)
+
+
+# Run the chatbot
+if _name_ == "_main_":
+    basic_chatbot()
+
+
+
+
